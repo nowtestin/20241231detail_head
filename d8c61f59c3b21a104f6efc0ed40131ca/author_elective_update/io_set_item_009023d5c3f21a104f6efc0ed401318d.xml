@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>20</order>
+        <sc_cat_item display_value="表形式帳票のデータ格納">c88ddf91c3f21a104f6efc0ed40131d0</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-30 07:05:13</sys_created_on>
+        <sys_id>009023d5c3f21a104f6efc0ed401318d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>対象者.表形式帳票のデータ格納</sys_name>
+        <sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope>
+        <sys_update_name>io_set_item_009023d5c3f21a104f6efc0ed401318d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-30 07:05:13</sys_updated_on>
+        <variable_set display_value="対象者">1826a6c0c3fa52104f6efc0ed4013115</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</application>
+        <file_path/>
+        <instance_id>e5ad1ec01b198e5c77c7cb7b234bcbb6</instance_id>
+        <instance_name>dev250013</instance_name>
+        <name>io_set_item_009023d5c3f21a104f6efc0ed401318d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>20</order><sc_cat_item display_value="表形式帳票のデータ格納">c88ddf91c3f21a104f6efc0ed40131d0</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-30 07:05:13</sys_created_on><sys_id>009023d5c3f21a104f6efc0ed401318d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>対象者.表形式帳票のデータ格納</sys_name><sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package><sys_policy/><sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope><sys_update_name>io_set_item_009023d5c3f21a104f6efc0ed401318d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-30 07:05:13</sys_updated_on><variable_set display_value="対象者">1826a6c0c3fa52104f6efc0ed4013115</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1480420897</payload_hash>
+        <record_name>対象者.表形式帳票のデータ格納</record_name>
+        <reverted_from/>
+        <source>d4c61799c3b21a104f6efc0ed4013100</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-30 07:05:13</sys_created_on>
+        <sys_id>2e9063d5c3f21a104f6efc0ed4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194166212c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-30 07:05:13</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>229063d532f21a10079ce6541d309858</update_guid>
+        <update_guid_history>229063d532f21a10079ce6541d309858:-1480420897</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="対象者.表形式帳票のデータ格納">88212fd5c3f21a104f6efc0ed4013110</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-30 07:07:30</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>13531a8479414ed982a2e44208762779</sys_id>
+        <sys_metadata>009023d5c3f21a104f6efc0ed401318d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>対象者.表形式帳票のデータ格納</sys_name>
+        <sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope>
+        <sys_scope_delete display_value="">7770efb75b264988b15deef562694d64</sys_scope_delete>
+        <sys_update_name>io_set_item_009023d5c3f21a104f6efc0ed401318d</sys_update_name>
+        <sys_update_version display_value="io_set_item_009023d5c3f21a104f6efc0ed401318d">2e9063d5c3f21a104f6efc0ed4013158</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-30 07:07:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

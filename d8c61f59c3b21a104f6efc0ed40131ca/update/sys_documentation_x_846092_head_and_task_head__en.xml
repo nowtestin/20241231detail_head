@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Task_head" language="en" table="x_846092_head_and_task_head">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Task_head</label>
+            <language>en</language>
+            <name>x_846092_head_and_task_head</name>
+            <plural>Task_heads</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-30 06:28:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Task_head</sys_name>
+            <sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope>
+            <sys_update_name>sys_documentation_x_846092_head_and_task_head__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-30 06:28:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
