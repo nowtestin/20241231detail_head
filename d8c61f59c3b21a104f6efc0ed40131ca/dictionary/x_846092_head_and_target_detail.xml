@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="03d8935dc3b21a104f6efc0ed401315d" label="Target_detail" max_length="40" name="x_846092_head_and_target_detail" type="collection">
         <element label="V shain name" max_length="200" name="v_shain_name" type="string"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="V detail no" max_length="40" name="v_detail_no" type="string" use_dynamic_default="true"/>
+        <element label="V detail no" max_length="40" name="v_detail_no" type="integer"/>
         <element label="V mail" max_length="200" name="v_mail" type="string"/>
         <element label="V bumen" max_length="200" name="v_bumen" type="string"/>
         <element label="V task num" max_length="32" name="v_task_num" reference="x_846092_head_and_task_head" type="reference"/>

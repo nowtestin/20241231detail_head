@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable>IO:54853990c30712104f6efc0ed40131da</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onchange_detail_no_add</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+       // MRVSを変数に代入
+    var mrvs = g_service_catalog.parent.getValue('sinsei_jouhou');
+
+    // 1行目の場合
+    if (!g_form.getValue('v_detail_no')) {
+        if (mrvs.length === 0) {
+            g_form.setValue('v_detail_no', 1);
+
+        // 1行目ではない場合
+        // MRVSのデータをJSONに変換し、現在の行+1を変数「行」に入力する
+        } else if (g_service_catalog.parent) {
+            var max_row = 0;
+            var mrvs_list = JSON.parse(mrvs);
+
+            for (var i = 0; i < mrvs_list.length; i++) {
+                var current_row = Number(mrvs_list[i].v_detail_no);
+
+                if (current_row > max_row)
+                    max_row = current_row;
+            }
+            g_form.setValue('v_detail_no', Number(max_row) + 1);
+        }
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 07:45:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7acf3598c30712104f6efc0ed4013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onchange_detail_no_add</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope>
+        <sys_update_name>catalog_script_client_7acf3598c30712104f6efc0ed4013142</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 07:45:12</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>false</va_supported>
+        <variable_set display_value="申請情報">3d7e5715c3f21a104f6efc0ed4013167</variable_set>
+        <view/>
+    </catalog_script_client>
+    <sys_es_latest_script action="DELETE">
+        <id>7acf3598c30712104f6efc0ed4013142</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 07:45:12</sys_created_on>
+        <sys_id>0c108698c30712104f6efc0ed4013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 07:45:12</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</application>
+        <file_path/>
+        <instance_id>e5ad1ec01b198e5c77c7cb7b234bcbb6</instance_id>
+        <instance_name>dev250013</instance_name>
+        <name>catalog_script_client_7acf3598c30712104f6efc0ed4013142</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;set&lt;/applies_to&gt;&lt;cat_item/&gt;&lt;cat_variable&gt;IO:54853990c30712104f6efc0ed40131da&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onchange_detail_no_add&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+       // MRVSを変数に代入
+    var mrvs = g_service_catalog.parent.getValue('sinsei_jouhou');
+
+    // 1行目の場合
+    if (!g_form.getValue('v_detail_no')) {
+        if (mrvs.length === 0) {
+            g_form.setValue('v_detail_no', 1);
+
+        // 1行目ではない場合
+        // MRVSのデータをJSONに変換し、現在の行+1を変数「行」に入力する
+        } else if (g_service_catalog.parent) {
+            var max_row = 0;
+            var mrvs_list = JSON.parse(mrvs);
+
+            for (var i = 0; i &lt; mrvs_list.length; i++) {
+                var current_row = Number(mrvs_list[i].v_detail_no);
+
+                if (current_row &gt; max_row)
+                    max_row = current_row;
+            }
+            g_form.setValue('v_detail_no', Number(max_row) + 1);
+        }
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-08 07:45:12&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7acf3598c30712104f6efc0ed4013142&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;onchange_detail_no_add&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="head and detail test" source="x_846092_head_and"&gt;d8c61f59c3b21a104f6efc0ed40131ca&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="head and detail test"&gt;d8c61f59c3b21a104f6efc0ed40131ca&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_7acf3598c30712104f6efc0ed4013142&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-08 07:45:12&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;va_supported&gt;false&lt;/va_supported&gt;&lt;variable_set display_value="申請情報"&gt;3d7e5715c3f21a104f6efc0ed4013167&lt;/variable_set&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;7acf3598c30712104f6efc0ed4013142&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-08 07:45:12&lt;/sys_created_on&gt;&lt;sys_id&gt;0c108698c30712104f6efc0ed4013153&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-08 07:45:12&lt;/sys_updated_on&gt;&lt;table&gt;catalog_script_client&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-300868243</payload_hash>
+        <record_name>onchange_detail_no_add</record_name>
+        <reverted_from/>
+        <source>25d5a471c37a5a104f6efc0ed40131e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 07:45:12</sys_created_on>
+        <sys_id>98104210c34712104f6efc0ed4013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19444dfeab70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 07:45:12</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>9c10421068471210353afad3f23f6411</update_guid>
+        <update_guid_history>9c10421068471210353afad3f23f6411:-300868243</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="onchange_detail_no_add">fba04210c34712104f6efc0ed40131d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 07:47:54</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>7ed9412b2dc14337994add9f240deed1</sys_id>
+        <sys_metadata>7acf3598c30712104f6efc0ed4013142</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onchange_detail_no_add</sys_name>
+        <sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope>
+        <sys_scope_delete display_value="">7770efb75b264988b15deef562694d64</sys_scope_delete>
+        <sys_update_name>catalog_script_client_7acf3598c30712104f6efc0ed4013142</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_7acf3598c30712104f6efc0ed4013142">98104210c34712104f6efc0ed4013112</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 07:47:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

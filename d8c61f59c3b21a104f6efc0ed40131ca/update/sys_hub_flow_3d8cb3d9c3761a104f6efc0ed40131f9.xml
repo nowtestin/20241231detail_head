@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=819000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3d8cb3d9c3761a104f6efc0ed40131f9</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Copy of head and detail main flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="head and detail test" source="x_846092_head_and">d8c61f59c3b21a104f6efc0ed40131ca</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="head and detail test">d8c61f59c3b21a104f6efc0ed40131ca</sys_scope>
         <sys_update_name>sys_hub_flow_3d8cb3d9c3761a104f6efc0ed40131f9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-31 02:03:44</sys_updated_on>
+        <sys_updated_on>2025-01-06 02:50:58</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -77,16 +77,16 @@
         <table>x_846092_head_and_task_head</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <active>false</active>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
         <identifier>3d8cb3d9c3761a104f6efc0ed40131f9</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-12-30 09:20:54</sys_created_on>
         <sys_id>9aafffddc3761a104f6efc0ed40131c3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-31 02:03:44</sys_updated_on>
+        <sys_updated_on>2025-01-08 07:14:42</sys_updated_on>
         <trigger display_value="">9e54e71dc3f21a104f6efc0ed401319f</trigger>
     </sys_trigger_runner_mapping>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3d8cb3d9c3761a104f6efc0ed40131f9^sys_idNOT IN9aafffddc3761a104f6efc0ed40131c3"/>
