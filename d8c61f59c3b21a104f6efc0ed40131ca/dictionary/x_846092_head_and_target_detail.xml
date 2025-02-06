@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="03d8935dc3b21a104f6efc0ed401315d" label="Target_detail" max_length="40" name="x_846092_head_and_target_detail" type="collection">
-        <element label="V shain name" max_length="200" name="v_shain_name" type="string"/>
-        <element label="V detail no" max_length="40" name="v_detail_no" type="integer"/>
-        <element label="V mail" max_length="200" name="v_mail" type="string"/>
-        <element label="V bumen" max_length="200" name="v_bumen" type="string"/>
         <element label="V task num" max_length="32" name="v_task_num" reference="x_846092_head_and_task_head" type="reference"/>
+        <element label="V unit price" max_length="2812" name="v_unit_price" type="decimal"/>
+        <element label="V detail no" max_length="40" name="v_detail_no" type="integer"/>
+        <element label="V unit num" max_length="40" name="v_unit_num" type="integer"/>
+        <element label="V mail" max_length="200" name="v_mail" type="string"/>
+        <element label="V shain name" max_length="200" name="v_shain_name" type="string"/>
+        <element label="V bumen" max_length="200" name="v_bumen" type="string"/>
+        <element label="Sub total" max_length="20" name="sub_total" type="price"/>
         <index name="index">
             <element name="v_task_num"/>
         </index>
